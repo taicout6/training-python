@@ -13,12 +13,15 @@ for letra in palavra:
     print(letra)
 
 
+# Função range(start, stop, step)
+
 for n in range(10):
   print(n)
 
 
 for x in range(1, 11):
   print(x)
+
 
 for y in range(2, 20, 2):
   print(y)
