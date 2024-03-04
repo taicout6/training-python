@@ -26,3 +26,16 @@ for x in range(1, 11):
 for y in range(2, 20, 2):
   print(y)
 
+
+# Acumuladores (acc = accumulator)
+  
+acc = 0
+
+for number in range(1, 101):
+  # acc = acc + number
+  # Soma de todos os valores páres entre 1 e 100
+  if number % 2 == 0:
+    acc += number
+
+print(acc)
+
