@@ -10,3 +10,4 @@ def nFatorial(L):
   return n-1
 
 print(nFatorial(120))
+
