@@ -18,6 +18,12 @@ class Ponto:
 
   def __repr__(self) -> str:
     return '(' + str(self.x) + ',' + str(self.y) + ')'
+  
+  def __add__(self, other):
+    if type(other) == Ponto:
+      return Ponto(self.x + other.x, self.y + other.y)
+    else:
+      return Ponto(self.x + other, self.y + other)
 
 
 p = Ponto()
@@ -25,4 +31,8 @@ p.setX(5)
 p.setY(4)
 
 print(p)
+
+q = Ponto(3, 4)
+
+print(p + q)
 
